@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+    *{
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background: hsl(225, 100%, 94%);
+      background-image: url(images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: hsl(224, 23%, 55%);
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .cover{
+      max-width: 380px;
+
+      background-color: white;
+      border-radius: 15px;
+    }
+    .image{
+      width: 100%;
+      height: 200px;
+    }
+    .image img{
+      height: 100%;
+      width: 100%;
+      border-radius: 15px 15px 0px 0px;
+      padding-bottom: 30px;
+    }
+    h2{
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: px;
+      font-weight: 900;
+      color: hsl(223, 47%, 23%);
+    }
+    .text{
+      padding: 5px 20px 5px 20px;
+    }
+    .text>p{
+      text-align: center;
+      font-size: 16px;
+      line-height: 25px;
+      padding: 10px;
+    }
+    .plan{
+      margin: 10px 25px;
+      background-color: hsla(225, 100%, 94%, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+      padding: 15px;
+    }
+    .cate{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .cate>img{
+      height: 35px;
+      margin-right: 5px;
+    }
+    .time{
+      padding: 5px 10px;
+    }
+    .time #par{
+      font-size: 14px;
+      font-weight: 900;
+      color: hsl(223, 47%, 23%);
+      padding-bottom: 2px;
+    }
+    .time #para{
+      font-weight: 500;
+      font-size: 14px;
+      padding-top: 0.5px;
+    }
+    .change{
+      font-weight: 900px;
+      font-size: 14px;
+    }
+    .change:hover{
+      color: hsl(245, 75%, 52%);
+      cursor: pointer;
+    }
+    .payment{
+      padding: 20px 25px 25px 25px;
+    }
+    .pay{
+      text-align: center;
+      font-weight: 700;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+    }
+    .pay:hover{
+      color: white;
+      background-color: hsla(245, 75%, 52%, 0.719);
+      cursor: pointer;
+      box-shadow: -5px 10px 20px hsla(245, 75%, 52%, 0.411);
+    }
+    
+    .cancel{
+      text-align: center;
+      font-weight: 700;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+    }
+    .cancel:hover{
+      cursor: pointer;
+      color: hsl(223, 47%, 23%);
+      text-shadow: 5px 3px 15px grey;
+    }
+
+  
+  </style>
+
+</head>
+<body>
+  
+  <section class="container">
+    <div class="cover">
+
+      <div class="image">
+        <img src="images/illustration-hero.svg">
+      </div>
+
+      <div class="info">
+        <div class="head">
+          <h2>Order Summary</h2>
+        </div>
+  
+        <div class="text">
+          <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+            device anywhere you like!</p>
+        </div>
+  
+        <div class="plan">
+          <div class="cate">
+            <img src="images/icon-music.svg">
+              <div class="time">
+                <p id="par">Annual Plan</p>
+                <p id="para"> $59.99/year</p>
+              </div>
+          </div>
+          
+          <div class="change">
+            <p>Change</p>
+          </div>
+        </div>
+  
+        <div class="payment">
+          <div class="pay">
+            Proceed to Payment
+          </div>
+    
+          <div class="cancel">
+            Cancel Order
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+</body>
+</html>
